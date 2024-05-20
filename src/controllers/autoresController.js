@@ -4,6 +4,7 @@ class AutorController {
 
   static listarAutores = async(req, res) => {
     try {
+      
       const autoresResultado = await autores.find();
 
       res.status(200).json(autoresResultado);
